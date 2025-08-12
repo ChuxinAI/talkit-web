@@ -15,7 +15,7 @@ export default async function Home() {
   })();
 
   const regionCode = countryFromIp || countryFromAcceptLanguage || "us";
-  const appStoreUrl = `https://apps.apple.com/${regionCode}/app/6448311069`;
+  const appStoreUrl = `https://apps.apple.com/${regionCode}/app/6746628937`;
   return (
     <div className="min-h-screen flex flex-col items-center justify-between p-8">
       <div></div>
