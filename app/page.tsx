@@ -26,7 +26,7 @@ export default async function Home() {
         <div className="mb-6">
           <Image
             src="/logo.jpg"
-            alt="Learning english, just talkit!"
+            alt="Learning English, just Talkit !"
             width={200}
             height={200}
             priority
@@ -36,7 +36,7 @@ export default async function Home() {
         
         {/* 宣传语 */}
         <h1 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6">
-          Learning english, just <span className="text-[#A35AD9]">talkit</span> !
+          Learning English, just <span className="text-[#A35AD9]">Talkit</span> !
           <br />
         </h1>
         
