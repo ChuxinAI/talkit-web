@@ -16,8 +16,8 @@ export const metadata: Metadata = {
   title: "TalkIt - Learning English, Just TalkIt !",
   description: "Download TalkIt iOS app to start learning English in a fun and interactive way",
   icons: {
-    icon: "/logo.jpg",
-    apple: "/logo.jpg",
+    icon: "/ico.png",
+    apple: "/ico.png",
   },
 };
 
