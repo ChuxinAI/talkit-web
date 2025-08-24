@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "TalkIt - Learning English, just TalkIt !",
-  description: "Download TalkIt iOS app to start learning English in a fun and interactive way",
+  description: "Download Talkit iOS app to start learning English in a fun and interactive way",
   icons: {
     icon: "/ico.png",
     apple: "/ico.png",
