@@ -1,9 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 
-export default function RedirectPage() {
+function RedirectContent() {
   const searchParams = useSearchParams();
   const [showCopyInstructions, setShowCopyInstructions] = useState(false);
   const url = searchParams.get('url');
@@ -110,5 +110,20 @@ export default function RedirectPage() {
         <p className="text-gray-600">正在跳转到 App Store...</p>
       </div>
     </div>
+  );
+}
+
+export default function RedirectPage() {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center p-8">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+          <p className="text-gray-600">加载中...</p>
+        </div>
+      </div>
+    }>
+      <RedirectContent />
+    </Suspense>
   );
 }
