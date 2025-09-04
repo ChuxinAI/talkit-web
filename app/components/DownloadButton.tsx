@@ -5,9 +5,11 @@ interface DownloadButtonProps {
 }
 
 export default function DownloadButton({ appStoreUrl }: DownloadButtonProps) {
+  const redirectUrl = `/redirect?url=${encodeURIComponent(appStoreUrl)}`;
+  
   return (
     <a
-      href={appStoreUrl}
+      href={redirectUrl}
       className="bg-black text-white rounded-lg px-6 py-3 inline-flex items-center space-x-3 hover:bg-gray-800 transition-colors"
     >
       <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
