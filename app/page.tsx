@@ -44,6 +44,12 @@ export default async function Home() {
         {/* iOS下载按钮 */}
         <div className="mb-8">
           <DownloadButton appStoreUrl={appStoreUrl} />
+          {/* 测试文字链接 */}
+          <div className="mt-4">
+            <a href={appStoreUrl} className="text-blue-600 underline text-sm">
+              App Store 下载链接 (测试用)
+            </a>
+          </div>
         </div>
       </main>
       
